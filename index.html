@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cytoscape</title>
+    <script src="https://cjrtnc.leaningtech.com/2.2/loader.js"></script>
+    <style>
+      .container {
+        width: calc(100vw);
+        height: calc(100vh);
+        box-shadow: none;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cytoscape-container"></div>
+  </body>
+  <script>
+      const appContainer = document.getElementById("cytoscape-container");
+      cheerpjInit();
+      cheerpjCreateDisplay(-1, -1, appContainer);
+      cheerpjRunMain("cytoscape.CyMain", "/app/cytoscape.jar:/app/lib.jar"); 
+  </script>
+</html>
